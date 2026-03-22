@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Hospital Management</title>
+        <link rel="stylesheet" href="style.css">
+        <script>
+            function cl(){
+                alert("Register Successful!");
+                document.getElementById("clearform").reset();
+            }
+        </script>
+        <style>
+            textarea{
+                width:200px;
+                height: 100px;
+                padding: 10px;
+                margin: 10px;
+                border: 1px solid gray;
+                border-radius: 5px;
+            }
+            input{
+                width:90px;
+                padding: 10px;
+                margin: 10px;
+                border: 1px solid gray;
+                border-radius: 5px;
+            }
+        </style>
+    </head>
+     <body class="reg">
+        <form id="clearform">
+        <header class="hed">
+            <h1>Hospital Management System</h1>
+            <p>Pharmacy Management</p>
+            </header>
+            <center>
+        <h1>Patient Registration</h1>
+            </center>
+        <div class="box">
+            <center>
+            <input type="text" placeholder="Patient Name" class="input">
+            <input type="number" placeholder="Phone Number" class="input">
+            <input type="number" placeholder="Age" class="input">
+            <textarea placeholder="Disease/Problem"></textarea>
+            <br><br><br>
+            <button onclick="cl()">Register Patient</button>
+            </center>
+        </div>
+        </form>
+        <footer>
+            <p>@ 2026 Hospital Management system For Everest Assignment</p>
+            <a href=""><span class="dots">&#8942;</span></a>
+        </footer>
+    </body>
+</html>
